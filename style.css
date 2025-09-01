@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Delius&family=Libertinus+Math&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0; /**/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: rgb(146, 221, 242);
+    font-family: "Delius", cursive;
+    background-image: url(summer.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;  
+    text-align: center;
+}
+
+#topic {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: clamp(28px, 6vw, 50px);
+}
+
+#subtopic {
+    opacity: 0.7;
+    font-size: clamp(14px, 3vw, 19px);
+    margin-bottom: 12px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#calenderDiv {
+    width: 95%;            
+    max-width: 600px;      
+    background-color: white;
+    border-radius: 12px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;      
+}
+
+#calenderHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px 12px 0 0;
+    border: 2px solid black;
+    padding: 0 10px;
+    min-height: 50px;
+    font-size: clamp(16px, 4vw, 22px);
+    background: rgb(12, 183, 240);
+    flex-wrap: wrap;  
+    gap: 5px;
+}
+
+#calenderContent {
+    border-radius: 0 0 12px 12px;
+    border: 2px solid black;
+    border-top: 0;
+    padding: 15px;
+}
+
+#habit {
+    margin-top: 6.5px;
+    cursor: pointer;
+}
+
+#totalDays {
+    margin-top: 6.5px;
+}
+
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.day {
+    aspect-ratio: 1 / 1;     
+    width: 100%;             
+    border-radius: 50%;
+    font-size: clamp(12px, 3vw, 18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.day:hover {
+    background-color: rgba(12, 183, 240, 0.2);
+}
+
+#resetButton {
+    font-size: 16px;          
+    padding: 10px 20px;       
+    background-color: rgb(12, 183, 240);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #099fd0; 
+}
+
+
